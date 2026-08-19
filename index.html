@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="(주)회사명 공식 홈페이지 - 신뢰와 혁신으로 함께하는 파트너" />
+  <title>홈 | (주)회사명</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, #1a3c5e 0%, #2a5f8f 100%);
+      color: #fff;
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.8rem; line-height: 1.3; margin-bottom: 20px; }
+    .hero h1 span { color: #7ec8e3; }
+    .hero p { font-size: 1.1rem; color: rgba(255,255,255,0.85); max-width: 560px; margin: 0 auto 36px; }
+    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* ===== STATS ===== */
+    .stats { padding: 48px 0; background: var(--accent); color: var(--white); }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
+    .stat-item h3 { font-size: 2.4rem; font-weight: 700; }
+    .stat-item p { font-size: 0.9rem; opacity: 0.85; margin-top: 4px; }
+
+    /* ===== SERVICE ICONS ===== */
+    .service-icon {
+      width: 56px; height: 56px;
+      background: var(--light);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+    .card h3 { font-size: 1.1rem; color: var(--primary); margin-bottom: 10px; }
+
+    /* ===== WHY US ===== */
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .why-text h2 { font-size: 1.9rem; color: var(--primary); margin-bottom: 16px; }
+    .why-text p { color: var(--muted); margin-bottom: 24px; }
+    .check-list { display: flex; flex-direction: column; gap: 12px; }
+    .check-list li { display: flex; align-items: flex-start; gap: 10px; }
+    .check-list li::before { content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .why-visual {
+      background: linear-gradient(135deg, var(--light) 0%, #dde8f5 100%);
+      border-radius: 16px; padding: 48px;
+      text-align: center; font-size: 5rem;
+    }
+
+    /* ===== CTA ===== */
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary) 0%, #2a5f8f 100%);
+      color: var(--white);
+      padding: 72px 0;
+      text-align: center;
+    }
+    .cta-section h2 { font-size: 2rem; margin-bottom: 14px; }
+    .cta-section p { color: rgba(255,255,255,0.8); margin-bottom: 32px; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.9rem; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">(주)<span>회사명</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="about.html">회사소개</a></li>
+        <li><a href="services.html">서비스</a></li>
+        <li><a href="contact.html">문의하기</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary">문의하기</a>
+      </div>
+      <button class="hamburger" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+  <div class="mobile-nav">
+    <a href="index.html">홈</a>
+    <a href="about.html">회사소개</a>
+    <a href="services.html">서비스</a>
+    <a href="contact.html">문의하기</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <h1>신뢰와 혁신으로<br /><span>함께 성장하는</span> 파트너</h1>
+    <p>고객의 비즈니스 목표를 달성할 수 있도록 최고의 솔루션과 전문 서비스를 제공합니다.</p>
+    <div class="hero-btns">
+      <a href="services.html" class="btn btn-primary">서비스 보기</a>
+      <a href="contact.html" class="btn btn-outline">무료 상담 신청</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<div class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item"><h3>500+</h3><p>누적 고객사</p></div>
+      <div class="stat-item"><h3>15년</h3><p>업계 경험</p></div>
+      <div class="stat-item"><h3>98%</h3><p>고객 만족도</p></div>
+      <div class="stat-item"><h3>24/7</h3><p>고객 지원</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section>
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>주요 서비스</h2>
+      <p>다양한 분야에서 검증된 전문 서비스를 제공합니다.</p>
+      <div class="line"></div>
+    </div>
+    <div class="grid-3">
+      <div class="card fade-in">
+        <div class="service-icon">💼</div>
+        <h3>컨설팅</h3>
+        <p>전문 컨설턴트가 비즈니스 과제를 분석하고 최적의 전략을 제시합니다.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="service-icon">🚀</div>
+        <h3>솔루션 개발</h3>
+        <p>고객 맞춤형 IT 솔루션으로 업무 효율성을 극대화합니다.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="service-icon">🛠️</div>
+        <h3>유지보수 & 지원</h3>
+        <p>도입 이후에도 안정적인 운영을 위한 전담 지원 서비스를 제공합니다.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:36px;">
+      <a href="services.html" class="btn btn-primary">전체 서비스 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section>
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-text fade-in">
+        <h2>왜 저희와 함께해야 할까요?</h2>
+        <p>15년의 경험을 바탕으로 고객의 성공을 최우선으로 생각합니다.</p>
+        <ul class="check-list">
+          <li>업계 최고 수준의 전문 인력 보유</li>
+          <li>체계적인 프로세스와 검증된 방법론</li>
+          <li>도입부터 운영까지 원스톱 서비스</li>
+          <li>합리적인 비용과 투명한 계약</li>
+          <li>전국 및 글로벌 네트워크 보유</li>
+        </ul>
+      </div>
+      <div class="why-visual fade-in">🏆</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section">
+  <div class="container">
+    <h2>지금 바로 상담을 시작하세요</h2>
+    <p>전문 담당자가 귀사의 상황에 맞는 최적의 솔루션을 안내해 드립니다.</p>
+    <a href="contact.html" class="btn btn-outline">무료 상담 신청하기 →</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">(주)<span style="color:#7ec8e3">회사명</span></a>
+        <p style="margin-top:12px">신뢰와 혁신으로 고객과 함께 성장하는<br>전문 서비스 기업입니다.</p>
+      </div>
+      <div class="footer-col">
+        <h4>메뉴</h4>
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="about.html">회사소개</a></li>
+          <li><a href="services.html">서비스</a></li>
+          <li><a href="contact.html">문의하기</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>연락처</h4>
+        <ul>
+          <li>02-0000-0000</li>
+          <li>info@company.co.kr</li>
+          <li>서울시 강남구 테헤란로 000</li>
+          <li>평일 09:00 ~ 18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 (주)회사명. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
